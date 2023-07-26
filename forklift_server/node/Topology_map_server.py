@@ -247,7 +247,7 @@ class MarkerViewer():
     def __init__(self):
         rospy.loginfo("Start View Marker")
         self.Marker_Pub = rospy.Publisher("/GoalMarker", Marker, queue_size = 100)
-        self.TextMarker_Pub = rospy.Publisher("/GoalNameMarker", Marker, queue_size = 100)
+        # self.TextMarker_Pub = rospy.Publisher("/GoalNameMarker", Marker, queue_size = 100)
 
         
     def PublishMarker(self, GoalName):
@@ -269,8 +269,8 @@ class MarkerViewer():
         marker.pose.orientation.z = waypoints[GoalName][2]
         marker.pose.orientation.w = waypoints[GoalName][3]
         
-        marker.scale.x = 1.0
-        marker.scale.y = 0.2
+        marker.scale.x = 0.5
+        marker.scale.y = 0.1
         marker.scale.z = 0.1
         
         marker.color.r = 255 / 255
