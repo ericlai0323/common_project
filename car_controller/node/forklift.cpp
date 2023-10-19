@@ -95,7 +95,11 @@ SubscribeAndPublish::SubscribeAndPublish(ros::NodeHandle *nh, ros::NodeHandle *p
         current_time = ros::Time::now();
         ros::spinOnce();
         if ((current_time - last_cmdvelcb_time).toSec() > timeout)
+        {
             wheel_speed = 0.0f;
+            wheel_angle = 0.0f;
+        }
+            
         if ((current_time - last_cmdforkcb_time).toSec() > timeout)
             fork_velocity = 0.0f;
 
