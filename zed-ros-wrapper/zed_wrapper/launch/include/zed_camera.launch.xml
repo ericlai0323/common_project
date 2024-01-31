@@ -37,14 +37,24 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <arg name="gpu_id"                default="-1" />
 
     <!-- Position respect to base frame (i.e. "base_link) -->
+    <!-- CeilSLAM -->
+    <!-- <arg name="cam_pos_x"             default="0.08" />
+    <arg name="cam_pos_y"             default="0.0" />
+    <arg name="cam_pos_z"             default="0.65" /> -->
+    <!-- Nomal SLAM -->
     <arg name="cam_pos_x"             default="0.08" />
     <arg name="cam_pos_y"             default="0.0" />
-    <arg name="cam_pos_z"             default="0.65" />
+    <arg name="cam_pos_z"             default="0.8" />
 
     <!-- Orientation respect to base frame (i.e. "base_link) -->
-    <arg name="cam_roll"              default="0.0" />
+    <!-- CeilSLAM -->
+    <!-- <arg name="cam_roll"              default="0.0" />
     <arg name="cam_pitch"             default="-0.785" />
-    <arg name="cam_yaw"               default="0.0" />
+    <arg name="cam_yaw"               default="0.0" /> -->
+    <!-- Nomal SLAM -->
+    <arg name="cam_roll"              default="0.0" />
+    <arg name="cam_pitch"             default="0.0" />
+    <arg name="cam_yaw"               default="0.0" />    
 
     <!-- ROS URDF description of the ZED -->
     <group if="$(arg publish_urdf)">
