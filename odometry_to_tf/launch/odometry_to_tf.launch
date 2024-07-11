@@ -1,0 +1,6 @@
+<launch>
+    <!-- Launch the node -->
+    <node pkg="odometry_to_tf" type="odometry_to_tf.py" name="odometry_to_tf" output="screen">
+        <param name="topic" value="/vins_estimator/odometry"/>
+    </node>
+</launch>

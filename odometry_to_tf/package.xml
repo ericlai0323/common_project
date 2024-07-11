@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>odometry_to_tf</name>
+  <version>0.0.0</version>
+  <description>The odometry_to_tf package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="you@example.com">Your Name</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+  <!-- Url tags are optional, but mutally exclusive -->
+  <!--   An url tag can appear in source, doc, or bugtracker -->
+  <!-- Optional, but 'website' is preferred -->
+  <!-- <url type="website">http://wiki.ros.org/ROS/Tutorials</url> -->
+  <!-- <url type="repository">https://github.com/ros/your_package_name.git</url> -->
+
+  <!-- Author tags -->
+  <!-- Authors are optional, but mutally exclusive -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+  <author email="you@example.com">Your Name</author>
+
+  <!-- Package dependencies -->
+  <!--   A package dependency on catkin is implicit -->
+  <!--   Use this syntax if you need a specific version of catkin -->
+  <!-- <depend>catkin &gt;=0.7.0</depend> -->
+  <!--   A package dependency with a version constraint -->
+  <!-- <depend package="message_generation" /> -->
+  <!-- <depend package="message_runtime" /> -->
+  <!-- <depend package="std_msgs" /> -->
+
+  <!-- The *_EXPORTED_TARGETS tag is required by catkin_package() -->
+  <!-- A buildtool_depend, build_depend, and exec_depend tag are required -->
+  <!-- Use this when you depend on a package that has not been released: -->
+  <!-- <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- <build_depend>message_generation</build_depend> -->
+  <!-- <exec_depend>message_runtime</exec_depend> -->
+
+  <!-- The *_EXPORTED_TARGETS tag is required by catkin_package() -->
+  <!-- <export> -->
+  <!--   <nav_msgs/> -->
+  <!-- </export> -->
+  <!-- You can specify that your package is to be built in a certain order -->
+  <!-- <build_order_depend>message_generation</build_order_depend> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>tf</build_depend>
+
+  <export>
+  </export>
+</package>
