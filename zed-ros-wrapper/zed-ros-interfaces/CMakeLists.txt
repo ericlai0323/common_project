@@ -32,6 +32,7 @@ add_message_files(
     Skeleton3D.msg
     RGBDSensors.msg
     PlaneStamped.msg
+    PosTrackStatus.msg
   )
 
 #add_action_files(DIRECTORY action FILES act.action)
@@ -54,6 +55,8 @@ add_service_files(
     start_object_detection.srv
     stop_object_detection.srv
     save_area_memory.srv
+    set_roi.srv
+    reset_roi.srv
   )
 
 generate_messages(
